@@ -1,0 +1,143 @@
+/* VARS */
+
+:root {
+	--main_font: 'Oleo Script', cursive;
+	--secondary_font: 'Rubik Moonrocks', cursive;
+	--green: #3BA964;
+	--bgPrimary: url(img/bgPrimary.jpg);
+}
+
+/* / VARS */
+
+body {
+	margin: auto 0;
+	padding: auto 0;
+	font-family: var(--main_font);
+	font-family: var(--);
+}
+
+/* HOMEPAGE */
+
+#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 770px;
+	background-image: url(img/bgHome.jpeg);
+	background-size: cover;
+}
+
+.fLook {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 770px;
+	color: white;
+	word-spacing: 10px;
+	font-family: var(--secondary_font);
+}
+
+.fLook p{
+	font-size: 22px;
+	color: var(--green);;
+}
+
+/* .fLook h2 {
+	font-family: var(--secondary_font);
+} */
+button {
+	color: lightgray;
+	border-color: lightgray;
+	border-radius: 12px;
+	background: none;
+	padding: 3px 14px;
+	cursor: pointer;
+	box-shadow: 0 5px lightgray;
+}
+button:hover {
+	background-color: var(--green);
+	color: white;
+}
+button:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.cv_down{
+	color: black
+}
+
+/*  / HOMEPAGE */
+
+/* ABOUT */
+
+#about {
+	display: flex;
+	justify-content: center;
+	min-height: 770px;
+	background-image: var(--bgPrimary);
+	background-size: cover;
+
+}
+#about h2 {
+	padding-top: 10%;
+}
+.wraper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 770px;
+}
+.wraper img {
+	border: 5px solid var(--green);
+	border-radius: 50%;
+	height: 226px;
+	width: 160px;
+    margin-bottom: 14px;
+
+}
+.hardLine {
+	background-color: var(--green);
+	border: solid 2px var(--green);
+	height: 636px;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+.my_life span{
+	color: var(--green);
+	font-weight: bold;
+}
+
+/*  / ABOUT */
+
+#portfolio {
+	border: 1px solid black;
+	border-radius: 12px;
+	background-color: lightgoldenrodyellow;
+}
+#blog {
+	border: 1px solid black;
+	border-radius: 12px;
+	background-color: lightsteelblue;
+	text-align: center;
+}
+#my_team {
+	border: 1px solid black;
+	border-radius: 12px;
+	background-color: red;
+	text-align: center;
+}
+#contact { 
+	border: 1px solid black;
+	border-radius: 12px;
+	background-color: purple;
+	text-align: center;
+}
+footer {
+	border: 1px solid black;
+	border-radius: 12px;
+	background-color: lightgray;
+	text-align: center;
+}
