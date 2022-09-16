@@ -4,7 +4,9 @@
 	--main_font: 'Oleo Script', cursive;
 	--secondary_font: 'Rubik Moonrocks', cursive;
 	--green: #3BA964;
-	--bgPrimary: url(img/bgPrimary.jpg);
+	--bgPrimary: url(img/BG/bgPrimary.jpg);
+	--bgSecondary: url(img/BG/bgSecondary.jpg);
+
 }
 
 /* / VARS */
@@ -24,7 +26,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 770px;
-	background-image: url(img/bgHome.jpeg);
+	background-image: url(img/BG/bgHome.jpeg);
 	background-size: cover;
 }
 
@@ -57,7 +59,7 @@ button {
 }
 button:hover {
 	background-color: var(--green);
-	color: white;
+	color: white!important;
 }
 button:active {
 	box-shadow: 0 5px #666;
@@ -78,11 +80,12 @@ button:active {
 	min-height: 770px;
 	background-image: var(--bgPrimary);
 	background-size: cover;
-
 }
+
 #about h2 {
 	padding-top: 10%;
 }
+
 .wraper {
 	display: flex;
 	justify-content: space-around;
@@ -93,7 +96,7 @@ button:active {
 	border: 5px solid var(--green);
 	border-radius: 50%;
 	height: 226px;
-	width: 160px;
+	width: 195px;
     margin-bottom: 14px;
 
 }
@@ -110,25 +113,99 @@ button:active {
 	font-weight: bold;
 }
 
+.my_life a{
+	text-decoration: none;
+}
 /*  / ABOUT */
 
-#portfolio {
-	border: 1px solid black;
-	border-radius: 12px;
-	background-color: lightgoldenrodyellow;
+/* SKILLS */
+#skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 770px;
+	background-image: var(--bgSecondary);
+	background-size: cover;
+	color: white;
+	font-family: var(--secondary_font);
 }
-#blog {
-	border: 1px solid black;
-	border-radius: 12px;
-	background-color: lightsteelblue;
-	text-align: center;
+
+#skills h2 {
+	padding-top: 4%;
+	margin-left: 367px;
 }
-#my_team {
-	border: 1px solid black;
-	border-radius: 12px;
-	background-color: red;
-	text-align: center;
+
+.technical_skills li{
+	list-style-type: none;
+	color: var(--green);
 }
+
+.technical_skills i{
+	color: white;
+	font-size: 40px;
+}
+
+.all_skills{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 845px;
+	max-width: 770px;
+}
+
+.soft_skills{
+	height: 597px;
+}
+
+.soft_skills a{
+	color: var(--green);
+	text-decoration: none;
+	
+}
+/*  / SKILLS */
+
+/* PROJECTS */
+#projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 770px;
+	background-image: var(--bgPrimary);
+	background-size: cover;
+}
+
+#projects h2{
+	padding-top: 4%;
+	margin-left: 40%;
+	margin-bottom: 12%;
+}
+
+.all_projects span{
+	color: var(--green);
+	font-weight: bold;
+}
+
+.all_projects button{
+	color: black;
+}
+
+.all_projects h3{
+	margin-left: 40px;
+}
+.project{
+	display: flex;
+	margin-left: 40px;
+	margin-bottom: 10%;
+}
+
+#projects img{
+	border: 5px solid var(--green);
+	border-radius: 1.5%;
+	height: 300px;
+	width: 600px;
+}
+/*  / PROJECTS */
+
 #contact { 
 	border: 1px solid black;
 	border-radius: 12px;
