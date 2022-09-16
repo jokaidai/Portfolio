@@ -132,7 +132,8 @@ button:active {
 
 #skills h2 {
 	padding-top: 4%;
-	margin-left: 367px;
+	margin-left: 40%;
+	margin-bottom: 10%;
 }
 
 .technical_skills li{
@@ -151,6 +152,7 @@ button:active {
 	align-items: center;
 	width: 845px;
 	max-width: 770px;
+	margin-left: 10%;
 }
 
 .soft_skills{
@@ -206,15 +208,42 @@ button:active {
 }
 /*  / PROJECTS */
 
+/* CONTACTS */
 #contact { 
-	border: 1px solid black;
-	border-radius: 12px;
-	background-color: purple;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 770px;
+	background-image: var(--bgSecondary);
+	background-size: cover;
+	color: white;
+	font-family: var(--secondary_font);
 }
-footer {
-	border: 1px solid black;
-	border-radius: 12px;
-	background-color: lightgray;
-	text-align: center;
+
+#contact h2 {
+	margin-left: 35%;
+	height: 222px;
 }
+
+.contact_me{
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 25px;
+	margin-top: 7%;
+}
+
+.contact_me h3{
+	margin-left: 10px;
+}
+
+.contact_me i{
+	margin-left: 2rem;
+	font-size: 50px;
+	color: white;
+}
+
+.contact_me a{
+	text-decoration: none;
+	color:var(--green)
+}
+/* / CONTACTS */
